@@ -1,0 +1,42 @@
+sonata_admin:
+    title: 'Sonata Admin'
+    dashboard:
+        blocks:
+            - { type: sonata.admin.block.admin_list, position: left }
+        groups:
+            administration:
+                label: Administration
+                icon: '<i class="fa fa-cogs" aria-hidden="true"></i>'
+                items:
+                    - app.admin.menu
+                    - app.admin.page
+                roles: [ ROLE_ADMIN ]
+            users:
+                label: Users
+                icon: '<i class="fa fa-user-secret" aria-hidden="true"></i>'
+                items:
+                    - sonata.user.admin.user
+                    - sonata.user.admin.group
+                roles: [ ROLE_ADMIN ]
+            media:
+                label: Media
+                icon: '<i class="fa fa-picture-o" aria-hidden="true"></i>'
+                items:
+                    - sonata.media.admin.media
+                    - sonata.media.admin.gallery
+                roles: [ ROLE_ADMIN ]
+
+    search: true
+    options:
+        html5_validate: true
+
+
+    title_logo: bundles/sonataadmin/logo_title.png
+
+#    security:
+#        handler: sonata.admin.security.handler.acl
+
+sonata_block:
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]

@@ -1,0 +1,7 @@
+home:
+    path: /
+    controller: App\Application\Common\PageBundle\Controller\IndexController::index
+
+page_list:
+    path:      /{page}
+    controller: App\Application\Common\PageBundle\Controller\IndexController::list

@@ -1,0 +1,30 @@
+#app:
+#    resource: '@App/App/ResourcesBundle/Resources/config/routing.yaml'
+#    prefix:   /
+
+index:
+    path: /
+    controller: App\Application\Common\PageBundle\Controller\IndexController::index
+
+pages:
+    resource: '../src/Application/Common/PageBundle/Resources/config/routing.yaml'
+    prefix:   /{_locale}
+    requirements:
+        _locale: pl|en
+    defaults: { _locale: pl}
+
+sonata_user_admin_security:
+    resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
+    prefix: /admin
+
+sonata_user_admin_resetting:
+    resource: '@SonataUserBundle/Resources/config/routing/admin_resetting.xml'
+    prefix: /admin/resetting
+
+gallery:
+    resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
+    prefix: /media/gallery
+
+media:
+    resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
+    prefix: /media
