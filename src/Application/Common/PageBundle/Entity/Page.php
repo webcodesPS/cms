@@ -35,9 +35,9 @@ class Page
     private $updatedAt;
 
     /**
-    * @var string
-    */
-    private $description;
+     * @var string
+     */
+    private $content;
 
     /**
      * Represent object as string
@@ -140,26 +140,26 @@ class Page
     }
 
     /**
-     * Set description
+     * Set content
      *
-     * @param string $description
-     * @return Page
+     * @param \App\Application\Common\PageBundle\Entity\Content $content
+     * @return Content
      */
-    public function setDescription($description)
+    public function setContent(\App\Application\Common\PageBundle\Entity\Content $content = null)
     {
-        $this->description = $description;
+        $this->content = $content;
 
         return $this;
     }
 
     /**
-     * Get description
+     * Get content
      *
-     * @return string
+     * @return \App\Application\Common\PageBundle\Entity\Content
      */
-    public function getDescription()
+    public function getContent()
     {
-        return $this->description;
+        return $this->content;
     }
 
 }

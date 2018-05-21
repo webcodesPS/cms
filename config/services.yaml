@@ -56,3 +56,15 @@ services:
         calls:
             - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
         public: true
+
+    app.admin.content:
+        class: App\Application\Common\PageBundle\Admin\ContentAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Content" }
+        arguments:
+            - ~
+            - App\Application\Common\PageBundle\Entity\Content
+            - ~
+        calls:
+            - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
+        public: true

@@ -22,7 +22,9 @@
             <gedmo:timestampable on="create"/>
         </field>
 
-        <field name="description" type="text" column="description" nullable="true"/>
+        <many-to-one field="content" target-entity="App\Application\Common\PageBundle\Entity\Content">
+            <join-column name="content_id" referenced-column-name="id" />
+        </many-to-one>
 
     </entity>
 </doctrine-mapping>
