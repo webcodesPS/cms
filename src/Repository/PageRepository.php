@@ -27,7 +27,7 @@ class PageRepository extends ServiceEntityRepository
         $qb->leftJoin('p.translates', 't')
             ->andWhere('t.locale = :locale')
             ->setParameter('locale', $locale);
-        $qb->join('p.galleries', 'g');
+        $qb->leftJoin('p.galleries', 'g');
 
         $query = $qb->getQuery();
         $result = $query->getArrayResult();
