@@ -11,21 +11,22 @@ use Sonata\AdminBundle\Show\ShowMapper;
 use Knp\Menu\ItemInterface as MenuItemInterface;
 use Sonata\AdminBundle\Admin\AdminInterface;
 use Sonata\AdminBundle\Form\Type\ChoiceFieldMaskType;
-use App\Application\Common\PageBundle\Entity\Content;
+use App\Application\Common\PageBundle\Entity\Translate;
 
-class ContentAdmin extends AbstractAdmin
+class TranslateAdmin extends AbstractAdmin
 {
 
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
             ->add('name', null, array('label' => 'Name'))
+            ->add('page', null, array('label' => 'Name'))
             ->add('locale', ChoiceFieldMaskType::class, [
                 'label' => 'Locale',
-                'choices' => Content::getLocaleList(),
+                'choices' => Translate::getLocaleList(),
                 'required' => false
             ])
-            ->add('description', null, array('label' => 'Description'))
+            ->add('translate', null, array('label' => 'Translate'))
         ;
     }
 
@@ -40,18 +41,8 @@ class ContentAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name', null, array('label' => 'Name'))
+            ->add('page', null, array('label' => 'Name'))
         ;
-    }
-
-    public function prePersist($object)
-    {
-
-    }
-
-    public function preUpdate($object)
-    {
-//        echo $object->getName();
-//        die();
     }
 
 }

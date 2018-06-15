@@ -1,8 +1,9 @@
 {% extends 'ApplicationCommonPageBundle::base.html.twig' %}
 
 {% block body %}
-    page list
 
     {{ dump(page) }}
+
+    {{ page.translates[0].translate }}
 
 {% endblock %}

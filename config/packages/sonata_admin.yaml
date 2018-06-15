@@ -10,7 +10,7 @@ sonata_admin:
                 items:
                     - app.admin.menu
                     - app.admin.page
-                    - app.admin.content
+                    - app.admin.translate
                 roles: [ ROLE_ADMIN ]
             users:
                 label: Users

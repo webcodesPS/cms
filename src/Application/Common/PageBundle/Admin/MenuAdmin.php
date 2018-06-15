@@ -18,8 +18,6 @@ class MenuAdmin extends AbstractAdmin
     {
         $formMapper
             ->add('name', null, array('label' => 'Name'))
-            ->add('parent',null, array('label' => 'Parent Menu'))
-            ->add('page', null, array('label' => 'Page'))
         ;
     }
 
@@ -27,7 +25,7 @@ class MenuAdmin extends AbstractAdmin
     {
         $datagridMapper
             ->add('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Page'))
+
         ;
     }
 
@@ -35,7 +33,7 @@ class MenuAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Page'))
+
         ;
     }
 

@@ -3,6 +3,7 @@
 namespace App\Application\Common\PageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Page
@@ -35,9 +36,21 @@ class Page
     private $updatedAt;
 
     /**
-     * @var string
+     * @var \App\Application\Common\PageBundle\Entity\Translate
      */
-    private $content;
+    private $translates;
+
+    /**
+     * @var \App\Application\Sonata\MediaBundle\Entity\Gallery
+     */
+    private $galleries;
+
+    public function __construct()
+    {
+        $this->translates = new ArrayCollection();
+
+        $this->galleries = new ArrayCollection();
+    }
 
     /**
      * Represent object as string
@@ -140,26 +153,59 @@ class Page
     }
 
     /**
-     * Set content
+     * Set translate
      *
-     * @param \App\Application\Common\PageBundle\Entity\Content $content
-     * @return Content
+     * @param array $translates
+     * @return Translates
      */
-    public function setContent(\App\Application\Common\PageBundle\Entity\Content $content = null)
+    public function setTranslate($translates)
     {
-        $this->content = $content;
+        $this->translates = $translates;
 
         return $this;
     }
 
     /**
-     * Get content
+     * Get translates
      *
-     * @return \App\Application\Common\PageBundle\Entity\Content
+     * @return string
      */
-    public function getContent()
+    public function getTranslate()
     {
-        return $this->content;
+        return $this->translates;
+    }
+
+    /**
+     * Add galleries
+     *
+     * @param \App\Application\Sonata\MediaBundle\Entity\Gallery $galleries
+     * @return Gallery
+     */
+    public function addGalleries(\App\Application\Sonata\MediaBundle\Entity\Gallery $galleries)
+    {
+        $this->galleries[] = $galleries;
+
+        return $this;
+    }
+
+    /**
+     * Remove galleries
+     *
+     * @param \App\Application\Sonata\MediaBundle\Entity\Gallery $galleries
+     */
+    public function removeGalleries(\App\Application\Sonata\MediaBundle\Entity\Gallery $galleries)
+    {
+        $this->galleries->removeGallery($galleries);
+    }
+
+    /**
+     * Get galleries
+     *
+     * @return \App\Application\Sonata\MediaBundle\Entity\Gallery
+     */
+    public function getGalleries()
+    {
+        return $this->galleries;
     }
 
 }

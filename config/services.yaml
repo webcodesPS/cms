@@ -29,6 +29,11 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
+    App\Repository\:
+        resource: '../src/Repository'
+        autowire: true
+        tags: ['doctrine.repository_service']
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
@@ -57,13 +62,13 @@ services:
             - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
         public: true
 
-    app.admin.content:
-        class: App\Application\Common\PageBundle\Admin\ContentAdmin
+    app.admin.translate:
+        class: App\Application\Common\PageBundle\Admin\TranslateAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Content" }
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Translate" }
         arguments:
             - ~
-            - App\Application\Common\PageBundle\Entity\Content
+            - App\Application\Common\PageBundle\Entity\Translate
             - ~
         calls:
             - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]

@@ -5,10 +5,11 @@ namespace App\Application\Common\PageBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Content
+ * Translate
  */
-class Content
+class Translate
 {
+
     const LOCALE_EN = 'en';
     const LOCALE_PL = 'pl';
     const LOCALE_FR = 'fr';
@@ -18,6 +19,11 @@ class Content
      * @var int
      */
     private $id;
+
+    /**
+     * @var \App\Application\Common\PageBundle\Entity\Page
+     */
+    private $page;
 
     /**
      * @var string
@@ -30,14 +36,9 @@ class Content
     private $locale;
 
     /**
-     * @var \App\Application\Common\PageBundle\Entity\Page
-     */
-    private $page;
-
-    /**
      * @var string
      */
-    private $description;
+    private $translate;
 
     /**
      * Represent object as string
@@ -75,6 +76,29 @@ class Content
     }
 
     /**
+     * Set page
+     *
+     * @param \App\Application\Common\PageBundle\Entity\Page $page
+     * @return Page
+     */
+    public function setPage(\App\Application\Common\PageBundle\Entity\Page $page = null)
+    {
+        $this->page = $page;
+
+        return $this;
+    }
+
+    /**
+     * Get page
+     *
+     * @return \App\Application\Common\PageBundle\Entity\Page
+     */
+    public function getPage()
+    {
+        return $this->page;
+    }
+
+    /**
      * Set name
      *
      * @param string $name
@@ -106,10 +130,8 @@ class Content
     public function setLocale($locale)
     {
         $this->locale = $locale;
-
         return $this;
     }
-
     /**
      * Get locale
      *
@@ -121,26 +143,26 @@ class Content
     }
 
     /**
-     * Set description
+     * Set translate
      *
-     * @param string $description
-     * @return Page
+     * @param string $translate
+     * @return Translate
      */
-    public function setDescription($description)
+    public function setTranslate($translate)
     {
-        $this->description = $description;
+        $this->translate = $translate;
 
         return $this;
     }
 
     /**
-     * Get description
+     * Get translate
      *
      * @return string
      */
-    public function getDescription()
+    public function getTranslate()
     {
-        return $this->description;
+        return $this->translate;
     }
 
 }

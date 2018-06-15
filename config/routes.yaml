@@ -1,10 +1,10 @@
-#app:
-#    resource: '@App/App/ResourcesBundle/Resources/config/routing.yaml'
-#    prefix:   /
-
 index:
-    path: /
+    path: /{_locale}
     controller: App\Application\Common\PageBundle\Controller\IndexController::index
+    prefix:   /{_locale}
+    requirements:
+        _locale: pl|en
+    defaults: { _locale: pl}
 
 pages:
     resource: '../src/Application/Common/PageBundle/Resources/config/routing.yaml'
@@ -12,6 +12,10 @@ pages:
     requirements:
         _locale: pl|en
     defaults: { _locale: pl}
+
+default:
+    path:      /{page}
+    controller: App\Application\Common\PageBundle\Controller\IndexController::list
 
 sonata_user_admin_security:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'

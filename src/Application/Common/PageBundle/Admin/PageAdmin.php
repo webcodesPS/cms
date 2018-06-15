@@ -17,7 +17,7 @@ class PageAdmin extends AbstractAdmin
     {
         $formMapper
             ->add('name', null, array('label' => 'Name'))
-            ->add('description', null, array('label' => 'Description'))
+            ->add('galleries')
         ;
     }
 
@@ -25,7 +25,6 @@ class PageAdmin extends AbstractAdmin
     {
         $datagridMapper
             ->add('name', null, array('label' => 'Name'))
-            ->add('description')
         ;
     }
 
@@ -33,7 +32,7 @@ class PageAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name', null, array('label' => 'Name'))
-            ->add('description', null, array('label' => 'Description'))
+            ->add('translates', null, array('label' => 'Translate'))
         ;
     }
 

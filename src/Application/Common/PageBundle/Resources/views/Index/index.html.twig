@@ -1,5 +1,15 @@
 {% extends 'ApplicationCommonPageBundle::base.html.twig' %}
 
 {% block body %}
-page index
+
+    {{ dump(page) }}
+
+    {% for key, value in gallery %}
+        <img src="{% path value.media.id, 'small' %}">
+    {% endfor %}
+
+    {% if page.translates[0] is defined %}
+        {{ page.translates[0].translate }}
+    {% endif %}
+
 {% endblock %}
