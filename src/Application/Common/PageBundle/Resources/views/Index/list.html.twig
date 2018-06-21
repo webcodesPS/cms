@@ -4,6 +4,12 @@
 
     {{ dump(page) }}
 
-    {{ page.translates[0].translate }}
+    {% for key, value in gallery %}
+        <img src="{% path value.media.id, 'small' %}">
+    {% endfor %}
+
+    {% if page[0].translates[0] is defined %}
+        {{ page[0].translates[0].translate }}
+    {% endif %}
 
 {% endblock %}

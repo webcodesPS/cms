@@ -20,13 +20,13 @@ class TranslateAdmin extends AbstractAdmin
     {
         $formMapper
             ->add('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Name'))
+            ->add('page', null, array('label' => 'Add to page'))
             ->add('locale', ChoiceFieldMaskType::class, [
                 'label' => 'Locale',
                 'choices' => Translate::getLocaleList(),
                 'required' => false
             ])
-            ->add('translate', null, array('label' => 'Translate'))
+            ->add('translate', null, array('label' => 'Translate content'))
         ;
     }
 
@@ -41,7 +41,8 @@ class TranslateAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Name'))
+            ->add('page', null, array('label' => 'Page'))
+            ->add('locale', null, array('label' => 'Locale'))
         ;
     }
 

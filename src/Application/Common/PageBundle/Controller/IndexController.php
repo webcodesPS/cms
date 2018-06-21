@@ -3,7 +3,7 @@
 namespace App\Application\Common\PageBundle\Controller;
 
 use App\Application\Common\PageBundle\Entity\Page;
-use App\Application\Sonata\MediaBundle\Entity\Gallery;
+use App\Application\Sonata\MediaBundle\Entity\GalleryHasMedia;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,40 +21,52 @@ class IndexController extends Controller
             ->getRepository(Page::class)
             ->findPage($request->getLocale());
 
-        $gallId = [0];
-
-        if (isset($pageArray[0]['galleries'])) {
-            foreach($pageArray[0]['galleries'] as $g) {
-                $gallId[] = $g['id'];
-            }
-        }
-
-        $em = $this->getDoctrine()->getManager();
-
-        $qb = $em->createQueryBuilder('ghm');
-        $qb->select('ghm')
-            ->from('ApplicationSonataMediaBundle:GalleryHasMedia', 'ghm')
-            ->where('ghm.gallery IN(:ids)')
-            ->setParameter('ids', $gallId)
-            ->orderBy('ghm.position', 'ASC');
-
-        $gallery = $qb->getQuery()->getResult();
+        $galleryArray = $this->getDoctrine()
+            ->getRepository(GalleryHasMedia::class)
+            ->findGalleries($this->_getGalleriesId($pageArray));
 
         return $this->render('ApplicationCommonPageBundle:Index:index.html.twig', [
             'page' => $pageArray,
-            'gallery' => $gallery
+            'gallery' => $galleryArray
         ]);
     }
 
+    /**
+     * @param Request $request
+     * @param $page
+     * @return Response
+     */
     public function list(Request $request, $page)
     {
-        $pageRepo = $this->getDoctrine()
+        $pageArray = $this->getDoctrine()
             ->getRepository(Page::class)
             ->findPage($request->getLocale(), $page);
 
+        $galleryArray = $this->getDoctrine()
+            ->getRepository(GalleryHasMedia::class)
+            ->findGalleries($this->_getGalleriesId($pageArray));
+
         return $this->render('ApplicationCommonPageBundle:Index:list.html.twig', [
-            'page' => $pageRepo
+            'page' => $pageArray,
+            'gallery' => $galleryArray
         ]);
+    }
+
+    /**
+     * @param Page $page
+     * @return Galleries id
+     */
+    private function _getGalleriesId( array $pageArray): array
+    {
+        $gallIds = [0];
+
+        if (isset($pageArray[0]['galleries'])) {
+            foreach ($pageArray[0]['galleries'] as $g) {
+                $gallIds[] = $g['id'];
+            }
+        }
+
+        return $gallIds;
     }
 
 }
