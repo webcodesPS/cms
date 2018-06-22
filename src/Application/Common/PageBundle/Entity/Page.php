@@ -34,6 +34,11 @@ class Page
      * @var \DateTime
      */
     private $updatedAt;
+    
+    /**
+     * @var \App\Application\Common\PageBundle\Entity\Menu
+     */
+    private $menus;
 
     /**
      * @var \App\Application\Common\PageBundle\Entity\Translate
@@ -47,6 +52,8 @@ class Page
 
     public function __construct()
     {
+        $this->menus = new ArrayCollection();
+        
         $this->translates = new ArrayCollection();
 
         $this->galleries = new ArrayCollection();
@@ -150,6 +157,29 @@ class Page
     public function getUpdatedAt()
     {
         return $this->updatedAt;
+    }
+    
+    /**
+     * Set menu
+     *
+     * @param array $menus
+     * @return Menus
+     */
+    public function setMenu($menus)
+    {
+        $this->menus = $menus;
+
+        return $this;
+    }
+
+    /**
+     * Get menus
+     *
+     * @return string
+     */
+    public function getMenu()
+    {
+        return $this->menus;
     }
 
     /**

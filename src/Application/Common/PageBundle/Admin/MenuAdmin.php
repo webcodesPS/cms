@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Knp\Menu\ItemInterface as MenuItemInterface;
 use Sonata\AdminBundle\Admin\AdminInterface;
+use Sonata\AdminBundle\Form\Type\ChoiceFieldMaskType;
 
 class MenuAdmin extends AbstractAdmin
 {
@@ -18,6 +19,7 @@ class MenuAdmin extends AbstractAdmin
     {
         $formMapper
             ->add('name', null, array('label' => 'Name'))
+            ->add('page', null, array('label' => 'Add page'))
         ;
     }
 
@@ -33,19 +35,8 @@ class MenuAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name', null, array('label' => 'Name'))
-
+            ->add('page', null, array('label' => 'Page'))
         ;
-    }
-
-    public function prePersist($object)
-    {
-
-    }
-
-    public function preUpdate($object)
-    {
-//        echo $object->getName();
-//        die();
     }
 
 }

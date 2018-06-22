@@ -102,7 +102,7 @@ class Translate
      * Set name
      *
      * @param string $name
-     * @return Page
+     * @return Name
      */
     public function setName($name)
     {

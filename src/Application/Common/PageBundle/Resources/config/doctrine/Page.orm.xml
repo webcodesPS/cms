@@ -21,6 +21,8 @@
         <field name="createdAt" type="datetime" nullable="false">
             <gedmo:timestampable on="create"/>
         </field>
+        
+        <one-to-many field="menus" target-entity="App\Application\Common\PageBundle\Entity\Menu" mapped-by="page" />
 
         <one-to-many field="translates" target-entity="App\Application\Common\PageBundle\Entity\Translate" mapped-by="page" />
 
