@@ -21,7 +21,7 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/*'
-        exclude: '../src/{Entity,Tests,Application,Form}'
+        exclude: '../src/{Entity,Tests,Application,Form,Twig}'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
@@ -33,6 +33,10 @@ services:
         resource: '../src/Repository'
         autowire: true
         tags: ['doctrine.repository_service']
+
+    App\Twig\AppExtension:
+        arguments: ["@doctrine"]
+        tags: ['twig.extension']
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
