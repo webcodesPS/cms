@@ -6,7 +6,7 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Knp\Menu\ItemInterface as MenuItemInterface;
 use Sonata\AdminBundle\Admin\AdminInterface;
@@ -26,7 +26,8 @@ class TranslateAdmin extends AbstractAdmin
                 'choices' => Translate::getLocaleList(),
                 'required' => false
             ])
-            ->add('translate', null, array('label' => 'Translate content'))
+            //->add('translate', null, array('label' => 'Translate content'))
+            ->add('translate', TextareaType::class, array('attr' => array('class' => 'ckeditor')))
         ;
     }
 
@@ -34,6 +35,7 @@ class TranslateAdmin extends AbstractAdmin
     {
         $datagridMapper
             ->add('name', null, array('label' => 'Name'))
+            ->add('page', null, array('label' => 'Page'))
         ;
     }
 
@@ -41,7 +43,7 @@ class TranslateAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Page'))
+            ->addIdentifier('page', null, array('label' => 'Page'))
             ->add('locale', null, array('label' => 'Locale'))
         ;
     }

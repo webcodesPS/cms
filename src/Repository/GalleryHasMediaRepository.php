@@ -21,10 +21,14 @@ class GalleryHasMediaRepository extends ServiceEntityRepository
     public function findGalleries($gallIds): array
     {
         $qb = $this->createQueryBuilder('ghm');
-        $qb->select('ghm')
+        $qb->select('ghm', 'g', 'm');
+        $qb->leftJoin('ghm.gallery', 'g');
+        $qb->leftJoin('ghm.media', 'm')
             ->where('ghm.gallery IN(:ids)')
+            ->andWhere('g.enabled = 1')
+            ->andWhere('m.enabled = 1')
             ->setParameter('ids', $gallIds)
-            ->orderBy('ghm.position', 'ASC');
+            ->orderBy('ghm.id', 'ASC');
 
         $query = $qb->getQuery();
         $result = $query->getResult();

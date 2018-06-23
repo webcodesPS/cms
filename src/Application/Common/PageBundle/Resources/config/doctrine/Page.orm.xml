@@ -27,12 +27,12 @@
         <one-to-many field="translates" target-entity="App\Application\Common\PageBundle\Entity\Translate" mapped-by="page" />
 
         <many-to-many field="galleries" target-entity="App\Application\Sonata\MediaBundle\Entity\Gallery">
-            <join-table name="galleries_pages">
+            <join-table name="page__gallery">
                 <join-columns>
-                    <join-column name="gallery_id" referenced-column-name="id" />
+                    <join-column name="page_id" referenced-column-name="id" />
                 </join-columns>
                 <inverse-join-columns>
-                    <join-column name="page_id" referenced-column-name="id" />
+                    <join-column name="gallery_id" referenced-column-name="id" />
                 </inverse-join-columns>
             </join-table>
         </many-to-many>

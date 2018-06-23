@@ -36,3 +36,6 @@ framework:
     templating:
         engines:
             twig
+        form:
+            resources:
+                - 'App:Form'

@@ -2,6 +2,8 @@
 
 namespace App\Application\Common\PageBundle\Entity;
 
+use App\Application\Sonata\MediaBundle\Entity\Gallery;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
@@ -236,6 +238,93 @@ class Page
     public function getGalleries()
     {
         return $this->galleries;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Menu[]
+     */
+    public function getMenus(): Collection
+    {
+        return $this->menus;
+    }
+
+    public function addMenu(Menu $menu): self
+    {
+        if (!$this->menus->contains($menu)) {
+            $this->menus[] = $menu;
+            $menu->setPage($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMenu(Menu $menu): self
+    {
+        if ($this->menus->contains($menu)) {
+            $this->menus->removeElement($menu);
+            // set the owning side to null (unless already changed)
+            if ($menu->getPage() === $this) {
+                $menu->setPage(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Translate[]
+     */
+    public function getTranslates(): Collection
+    {
+        return $this->translates;
+    }
+
+    public function addTranslate(Translate $translate): self
+    {
+        if (!$this->translates->contains($translate)) {
+            $this->translates[] = $translate;
+            $translate->setPage($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTranslate(Translate $translate): self
+    {
+        if ($this->translates->contains($translate)) {
+            $this->translates->removeElement($translate);
+            // set the owning side to null (unless already changed)
+            if ($translate->getPage() === $this) {
+                $translate->setPage(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function addGallery(Gallery $gallery): self
+    {
+        if (!$this->galleries->contains($gallery)) {
+            $this->galleries[] = $gallery;
+        }
+
+        return $this;
+    }
+
+    public function removeGallery(Gallery $gallery): self
+    {
+        if ($this->galleries->contains($gallery)) {
+            $this->galleries->removeElement($gallery);
+        }
+
+        return $this;
     }
 
 }

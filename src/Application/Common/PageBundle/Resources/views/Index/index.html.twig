@@ -2,14 +2,26 @@
 
 {% block body %}
 
-    {{ dump(page) }}
-
-    {% for key, value in gallery %}
-        <img src="{% path value.media.id, 'small' %}">
-    {% endfor %}
-
-    {% if page[0].translates[0] is defined %}
-        {{ page[0].translates[0].translate }}
-    {% endif %}
+    <div class="row">
+        <div class="col-12">
+            {% if page[0].translates[0] is defined %}
+                {{ page[0].translates[0].translate }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <br><br>
+        </div>
+    </div>
+    <div class="row">
+        {% for key, value in gallery %}
+            <div class="col-3">
+                <p>{{ value.gallery.name }}</p>
+                <img src="{% path value.media.id, 'small' %}">
+                <p>{{ value.media.description|trans|raw }}</p>
+            </div>
+        {% endfor %}
+    </div>
 
 {% endblock %}

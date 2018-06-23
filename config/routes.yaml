@@ -1,22 +1,25 @@
-index:
+app_index_index:
     path: /{_locale}
-    controller: App\Application\Common\PageBundle\Controller\IndexController::index
+    controller: App\Controller\IndexController::index
     prefix:   /{_locale}
     requirements:
-        _locale: pl|en
+        _locale: pl|en|fr|de
     defaults: { _locale: pl}
 
-pages:
-    resource: '../src/Application/Common/PageBundle/Resources/config/routing.yaml'
-    prefix:   /{_locale}
+app_index_list:
+    path:      /{_locale}/{page}
+    controller: App\Controller\IndexController::list
     requirements:
-        _locale: pl|en
+        _locale: pl|en|fr|de
     defaults: { _locale: pl}
 
 default:
     path:      /{page}
-    controller: App\Application\Common\PageBundle\Controller\IndexController::list
+    controller: App\Controller\IndexController::list
 
+#
+# SONATA
+#
 sonata_user_admin_security:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
     prefix: /admin
