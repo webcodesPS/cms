@@ -35,7 +35,7 @@ services:
         tags: ['doctrine.repository_service']
 
     App\Twig\AppExtension:
-        arguments: ["@doctrine"]
+        arguments: ["@doctrine", "@request_stack"]
         tags: ['twig.extension']
 
     # add more service definitions when explicit configuration is needed

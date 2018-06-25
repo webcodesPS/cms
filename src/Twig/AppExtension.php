@@ -5,6 +5,8 @@ namespace App\Twig;
 use Twig\Extension\AbstractExtension;
 use Doctrine\Bundle\DoctrineBundle\Registry as Doctrine;
 use App\Application\Common\PageBundle\Entity\Menu;
+use App\Application\Common\PageBundle\Entity\Translate;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 class AppExtension extends AbstractExtension implements \Twig_Extension_InitRuntimeInterface
 {
@@ -15,14 +17,20 @@ class AppExtension extends AbstractExtension implements \Twig_Extension_InitRunt
     private $doctrine;
 
     /**
+     * @var RequestStack
+     */
+    private $requestStack;
+
+    /**
      *
      * @var \Twig_Environment
      */
     private $environment;
 
-    function __construct(Doctrine $doctrine)
+    function __construct(Doctrine $doctrine, RequestStack $requestStack)
     {
         $this->doctrine = $doctrine;
+        $this->requestStack = $requestStack;
     }
 
     public function initRuntime(\Twig_Environment $environment)
@@ -45,8 +53,16 @@ class AppExtension extends AbstractExtension implements \Twig_Extension_InitRunt
             ->getRepository(Menu::class)
             ->findMenu('pl');
 
+        $localeArray = Translate::getLocaleList();
+
+        $currentRequest = $this->requestStack->getCurrentRequest();
+
+        $pageName = $currentRequest->get('page');
+
         return $this->environment->render('extensions/menu.html.twig', [
-                'menu' => $menuArray
+            'menu' => $menuArray,
+            'locales' => $localeArray,
+            'pageName' => $pageName,
         ]);
     }
 

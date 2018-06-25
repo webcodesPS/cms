@@ -2,7 +2,7 @@
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-    <entity repository-class="App\Application\Common\PageBundle\Repository\TranslateRepository" name="App\Application\Common\PageBundle\Entity\Translate" table="translate">
+    <entity repository-class="App\Repository\TranslatePageRepository" name="App\Application\Common\PageBundle\Entity\Translate" table="translate">
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>
