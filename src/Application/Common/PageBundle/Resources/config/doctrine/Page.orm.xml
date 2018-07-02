@@ -24,7 +24,7 @@
         
         <one-to-many field="menus" target-entity="App\Application\Common\PageBundle\Entity\Menu" mapped-by="page" />
 
-        <one-to-many field="translates" target-entity="App\Application\Common\PageBundle\Entity\Translate" mapped-by="page" />
+        <one-to-many field="translates" target-entity="App\Application\Common\PageBundle\Entity\TranslatePage" mapped-by="page" />
 
         <many-to-many field="galleries" target-entity="App\Application\Sonata\MediaBundle\Entity\Gallery">
             <join-table name="page__gallery">

@@ -66,13 +66,13 @@ services:
             - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
         public: true
 
-    app.admin.translate:
+    app.admin.translate.page:
         class: App\Application\Common\PageBundle\Admin\TranslateAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Translate" }
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Translate Page" }
         arguments:
             - ~
-            - App\Application\Common\PageBundle\Entity\Translate
+            - App\Application\Common\PageBundle\Entity\TranslatePage
             - ~
         calls:
             - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]

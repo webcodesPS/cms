@@ -43,7 +43,7 @@ class Page
     private $menus;
 
     /**
-     * @var \App\Application\Common\PageBundle\Entity\Translate
+     * @var \App\Application\Common\PageBundle\Entity\TranslatePage
      */
     private $translates;
 
@@ -279,14 +279,14 @@ class Page
     }
 
     /**
-     * @return Collection|Translate[]
+     * @return Collection|TranslatePage[]
      */
     public function getTranslates(): Collection
     {
         return $this->translates;
     }
 
-    public function addTranslate(Translate $translate): self
+    public function addTranslate(TranslatePage $translate): self
     {
         if (!$this->translates->contains($translate)) {
             $this->translates[] = $translate;
@@ -296,7 +296,7 @@ class Page
         return $this;
     }
 
-    public function removeTranslate(Translate $translate): self
+    public function removeTranslate(TranslatePage $translate): self
     {
         if ($this->translates->contains($translate)) {
             $this->translates->removeElement($translate);

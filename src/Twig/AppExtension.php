@@ -5,7 +5,7 @@ namespace App\Twig;
 use Twig\Extension\AbstractExtension;
 use Doctrine\Bundle\DoctrineBundle\Registry as Doctrine;
 use App\Application\Common\PageBundle\Entity\Menu;
-use App\Application\Common\PageBundle\Entity\Translate;
+use App\Application\Common\PageBundle\Entity\TranslatePage;
 use Symfony\Component\HttpFoundation\RequestStack;
 
 class AppExtension extends AbstractExtension implements \Twig_Extension_InitRuntimeInterface
@@ -53,7 +53,7 @@ class AppExtension extends AbstractExtension implements \Twig_Extension_InitRunt
             ->getRepository(Menu::class)
             ->findMenu('pl');
 
-        $localeArray = Translate::getLocaleList();
+        $localeArray = TranslatePage::getLocaleList();
 
         $currentRequest = $this->requestStack->getCurrentRequest();
 

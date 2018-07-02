@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Translate
  */
-class Translate
+class TranslatePage
 {
 
     const LOCALE_EN = 'en';
@@ -146,7 +146,7 @@ class Translate
      * Set translate
      *
      * @param string $translate
-     * @return Translate
+     * @return TranslatePage
      */
     public function setTranslate($translate)
     {

@@ -11,7 +11,7 @@ use Sonata\AdminBundle\Show\ShowMapper;
 use Knp\Menu\ItemInterface as MenuItemInterface;
 use Sonata\AdminBundle\Admin\AdminInterface;
 use Sonata\AdminBundle\Form\Type\ChoiceFieldMaskType;
-use App\Application\Common\PageBundle\Entity\Translate;
+use App\Application\Common\PageBundle\Entity\TranslatePage;
 
 class TranslateAdmin extends AbstractAdmin
 {
@@ -23,10 +23,9 @@ class TranslateAdmin extends AbstractAdmin
             ->add('page', null, array('label' => 'Add to page'))
             ->add('locale', ChoiceFieldMaskType::class, [
                 'label' => 'Locale',
-                'choices' => Translate::getLocaleList(),
+                'choices' => TranslatePage::getLocaleList(),
                 'required' => false
             ])
-            //->add('translate', null, array('label' => 'Translate content'))
             ->add('translate', TextareaType::class, array('attr' => array('class' => 'ckeditor')))
         ;
     }

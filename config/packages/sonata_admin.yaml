@@ -10,7 +10,12 @@ sonata_admin:
                 items:
                     - app.admin.menu
                     - app.admin.page
-                    - app.admin.translate
+                roles: [ ROLE_ADMIN ]
+            translation:
+                label: Translation
+                icon: '<i class="fa fa-random" aria-hidden="true"></i>'
+                items:
+                    - app.admin.translate.page
                 roles: [ ROLE_ADMIN ]
             users:
                 label: Users
