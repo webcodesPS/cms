@@ -7,7 +7,7 @@
         <ul class="navbar-nav mr-auto">
             {% for m in menu %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ app.request.baseUrl }}{% if default_locale != app.request.locale %}{{ '/' ~ app.request.locale }}{% endif %}{% if m.page.slug != "index" %}{{ '/' ~ m.page.slug }}{% endif %}">{{ m.name }}</a>
+                    <a class="nav-link" href="{{ app.request.baseUrl }}{% if default_locale != app.request.locale %}{{ '/' ~ app.request.locale }}{% endif %}{% if m.page.slug != "index" %}{{ '/' ~ m.page.slug }}{% else %}/{% endif %}">{{ m.translates[0].translate }}</a>
                 </li>
             {% endfor %}
         </ul>

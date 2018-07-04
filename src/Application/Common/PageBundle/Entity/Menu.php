@@ -3,6 +3,7 @@
 namespace App\Application\Common\PageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Menu
@@ -29,6 +30,16 @@ class Menu
      * @var \App\Application\Common\PageBundle\Entity\Page
      */
     private $page;
+
+    /**
+     * @var \App\Application\Common\PageBundle\Entity\TranslateMenu
+     */
+    private $translates;
+
+    public function __construct()
+    {
+        $this->translates = new ArrayCollection();
+    }
 
     /**
      * Represent object as string
@@ -119,6 +130,29 @@ class Menu
     public function getPage()
     {
         return $this->page;
+    }
+
+    /**
+     * Set translate
+     *
+     * @param array $translates
+     * @return Translates
+     */
+    public function setTranslate($translates)
+    {
+        $this->translates = $translates;
+
+        return $this;
+    }
+
+    /**
+     * Get translates
+     *
+     * @return string
+     */
+    public function getTranslate()
+    {
+        return $this->translates;
     }
 
 }

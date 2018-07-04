@@ -5,7 +5,7 @@ sonata_admin:
             - { type: sonata.admin.block.admin_list, position: left }
         groups:
             administration:
-                label: Administration
+                label: Website
                 icon: '<i class="fa fa-cogs" aria-hidden="true"></i>'
                 items:
                     - app.admin.menu
@@ -15,6 +15,7 @@ sonata_admin:
                 label: Translation
                 icon: '<i class="fa fa-random" aria-hidden="true"></i>'
                 items:
+                    - app.admin.translate.menu
                     - app.admin.translate.page
                 roles: [ ROLE_ADMIN ]
             users:

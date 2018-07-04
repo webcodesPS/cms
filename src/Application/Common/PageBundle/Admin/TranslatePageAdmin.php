@@ -6,20 +6,24 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Sonata\AdminBundle\Show\ShowMapper;
-use Knp\Menu\ItemInterface as MenuItemInterface;
-use Sonata\AdminBundle\Admin\AdminInterface;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Sonata\AdminBundle\Form\Type\ChoiceFieldMaskType;
+use App\Application\Common\PageBundle\Entity\TranslatePage;
 
-class MenuAdmin extends AbstractAdmin
+class TranslatePageAdmin extends AbstractAdmin
 {
 
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
             ->add('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Add page'))
+            ->add('page', null, array('label' => 'Add to page'))
+            ->add('locale', ChoiceFieldMaskType::class, [
+                'label' => 'Locale',
+                'choices' => TranslatePage::getLocaleList(),
+                'required' => false
+            ])
+            ->add('translate', TextareaType::class, array('attr' => array('class' => 'ckeditor')))
         ;
     }
 
@@ -27,7 +31,7 @@ class MenuAdmin extends AbstractAdmin
     {
         $datagridMapper
             ->add('name', null, array('label' => 'Name'))
-
+            ->add('page', null, array('label' => 'Page'))
         ;
     }
 
@@ -35,8 +39,9 @@ class MenuAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Page'))
-            ->add('translates', 'html', array('label' => 'Translate'))
+            ->addIdentifier('page', null, array('label' => 'Page'))
+            ->add('translate', 'html', array('label' => 'Translate'))
+            ->add('locale', null, array('label' => 'Locale'))
         ;
     }
 

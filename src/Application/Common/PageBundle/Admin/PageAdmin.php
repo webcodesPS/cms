@@ -44,9 +44,7 @@ class PageAdmin extends AbstractAdmin
 
     public function preUpdate($object)
     {
-//        echo $object->getName();
-//
-//        die();
+
     }
 
 }

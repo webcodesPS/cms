@@ -35,7 +35,7 @@ services:
         tags: ['doctrine.repository_service']
 
     App\Twig\AppExtension:
-        arguments: ["@doctrine", "@request_stack"]
+        arguments: ["@doctrine", "@request_stack", "@translator"]
         tags: ['twig.extension']
 
     # add more service definitions when explicit configuration is needed
@@ -66,8 +66,20 @@ services:
             - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
         public: true
 
+    app.admin.translate.menu:
+        class: App\Application\Common\PageBundle\Admin\TranslateMenuAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Translate Menu" }
+        arguments:
+            - ~
+            - App\Application\Common\PageBundle\Entity\TranslateMenu
+            - ~
+        calls:
+            - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
+        public: true
+
     app.admin.translate.page:
-        class: App\Application\Common\PageBundle\Admin\TranslateAdmin
+        class: App\Application\Common\PageBundle\Admin\TranslatePageAdmin
         tags:
             - { name: sonata.admin, manager_type: orm, group: "Content", label: "Translate Page" }
         arguments:

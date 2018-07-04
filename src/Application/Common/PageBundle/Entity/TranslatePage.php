@@ -5,7 +5,7 @@ namespace App\Application\Common\PageBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Translate
+ * TranslatePage
  */
 class TranslatePage
 {
@@ -58,8 +58,8 @@ class TranslatePage
     public static function getLocaleList(): array
     {
         return [
-            self::LOCALE_EN => 'en',
             self::LOCALE_PL => 'pl',
+            self::LOCALE_EN => 'en',
             self::LOCALE_FR => 'fr',
             self::LOCALE_DE => 'de',
         ];

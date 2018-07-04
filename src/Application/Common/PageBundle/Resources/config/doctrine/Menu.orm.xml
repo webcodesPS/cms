@@ -18,5 +18,7 @@
             <join-column name="page_id" referenced-column-name="id" nullable="true" />
         </many-to-one>
 
+        <one-to-many field="translates" target-entity="App\Application\Common\PageBundle\Entity\TranslateMenu" mapped-by="menu" />
+
     </entity>
 </doctrine-mapping>

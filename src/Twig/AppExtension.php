@@ -49,15 +49,15 @@ class AppExtension extends AbstractExtension implements \Twig_Extension_InitRunt
 
     public function displayMenu()
     {
-        $menuArray = $this->doctrine
-            ->getRepository(Menu::class)
-            ->findMenu('pl');
-
         $localeArray = TranslatePage::getLocaleList();
 
         $currentRequest = $this->requestStack->getCurrentRequest();
 
         $pageName = $currentRequest->get('page');
+
+        $menuArray = $this->doctrine
+            ->getRepository(Menu::class)
+            ->findMenu($currentRequest->get('_locale') ?: $currentRequest->getDefaultLocale());
 
         return $this->environment->render('extensions/menu.html.twig', [
             'menu' => $menuArray,

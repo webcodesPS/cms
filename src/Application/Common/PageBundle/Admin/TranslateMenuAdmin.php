@@ -7,42 +7,37 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Sonata\AdminBundle\Show\ShowMapper;
-use Knp\Menu\ItemInterface as MenuItemInterface;
-use Sonata\AdminBundle\Admin\AdminInterface;
 use Sonata\AdminBundle\Form\Type\ChoiceFieldMaskType;
 use App\Application\Common\PageBundle\Entity\TranslatePage;
 
-class TranslateAdmin extends AbstractAdmin
+class TranslateMenuAdmin extends AbstractAdmin
 {
 
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Add to page'))
+            ->add('menu', null, array('label' => 'Add to menu'))
             ->add('locale', ChoiceFieldMaskType::class, [
                 'label' => 'Locale',
                 'choices' => TranslatePage::getLocaleList(),
                 'required' => false
             ])
-            ->add('translate', TextareaType::class, array('attr' => array('class' => 'ckeditor')))
+            ->add('translate', null, array('label' => 'Translate'))
         ;
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('name', null, array('label' => 'Name'))
-            ->add('page', null, array('label' => 'Page'))
+            ->add('menu', null, array('label' => 'Menu'))
         ;
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier('name', null, array('label' => 'Name'))
-            ->addIdentifier('page', null, array('label' => 'Page'))
+            ->addIdentifier('menu', null, array('label' => 'Menu'))
+            ->add('translate', null, array('label' => 'Translate'))
             ->add('locale', null, array('label' => 'Locale'))
         ;
     }
