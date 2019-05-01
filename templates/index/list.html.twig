@@ -17,9 +17,9 @@
     <div class="row">
         {% for key, value in gallery %}
             <div class="col-3">
-                <p>{{ value.gallery.name }}</p>
+                <p>{{ value.media.translate[0].name|raw }}</p>
                 <img src="{% path value.media.id, 'small' %}">
-                <p>{{ value.media.description|trans|raw }}</p>
+                <p>{{ value.media.translate[0].description|raw }}</p>
             </div>
         {% endfor %}
     </div>

@@ -15,7 +15,7 @@ class IndexController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function index(Request $request)
+    public function index(Request $request): object
     {
         $pageArray = $this->getDoctrine()
             ->getRepository(Page::class)
@@ -23,7 +23,7 @@ class IndexController extends Controller
 
         $galleryArray = $this->getDoctrine()
             ->getRepository(GalleryHasMedia::class)
-            ->findGalleries($this->_getGalleriesId($pageArray));
+            ->findGalleries($this->_getGalleriesId($pageArray), $request->getLocale());
 
         return $this->render('index/index.html.twig', [
             'page' => $pageArray,
@@ -36,7 +36,7 @@ class IndexController extends Controller
      * @param $page
      * @return Response
      */
-    public function list(Request $request, $page)
+    public function list(Request $request, $page): object
     {
         $pageArray = $this->getDoctrine()
             ->getRepository(Page::class)
@@ -44,7 +44,7 @@ class IndexController extends Controller
 
         $galleryArray = $this->getDoctrine()
             ->getRepository(GalleryHasMedia::class)
-            ->findGalleries($this->_getGalleriesId($pageArray));
+            ->findGalleries($this->_getGalleriesId($pageArray), $request->getLocale());
 
         return $this->render('index/list.html.twig', [
             'page' => $pageArray,

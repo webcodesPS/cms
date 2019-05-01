@@ -20,6 +20,11 @@ class Media extends BaseMedia
     protected $id;
 
     /**
+     * @var \App\Application\Common\PageBundle\Entity\TranslateMedia
+     */
+    private $translates;
+
+    /**
      * Get id.
      *
      * @return int $id
@@ -27,5 +32,28 @@ class Media extends BaseMedia
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set translate
+     *
+     * @param array $translates
+     * @return Translates
+     */
+    public function setTranslate($translates)
+    {
+        $this->translates = $translates;
+
+        return $this;
+    }
+
+    /**
+     * Get translates
+     *
+     * @return string
+     */
+    public function getTranslate()
+    {
+        return $this->translates;
     }
 }

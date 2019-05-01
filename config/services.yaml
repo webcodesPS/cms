@@ -90,3 +90,15 @@ services:
             - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
         public: true
 
+    app.admin.translate.media:
+        class: App\Application\Common\PageBundle\Admin\TranslateMediaAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Translate Media" }
+        arguments:
+            - ~
+            - App\Application\Common\PageBundle\Entity\TranslateMedia
+            - ~
+        calls:
+            - [ setLabelTranslatorStrategy, ["@sonata.admin.label.strategy.underscore"]]
+        public: true
+

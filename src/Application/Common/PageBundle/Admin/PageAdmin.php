@@ -37,14 +37,4 @@ class PageAdmin extends AbstractAdmin
         ;
     }
 
-    public function prePersist($object)
-    {
-
-    }
-
-    public function preUpdate($object)
-    {
-
-    }
-
 }
