@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c296228-c02b-4735-a1bc-22751043b596" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/ContentAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Content.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Repository/ContentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Content.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/sonata_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/sonata_admin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/MenuAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/MenuAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Page.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Page.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Menu.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Menu.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMedia.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMedia.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMenu.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMenu.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslatePage.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslatePage.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,96 +28,130 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="2gtclassic@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="2gtclassic@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="2gtclassic@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="2gtclassic: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Page.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Content.orm.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Content.orm.xml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="465">
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Content.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Content.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="142" column="33" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="33" />
+      <file leaf-file-name="page" pinned="false" current-in-tab="false">
+        <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/page">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContentAdmin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/ContentAdmin.php">
+      <file leaf-file-name="AppExtension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Twig/AppExtension.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="615">
+              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu" pinned="false" current-in-tab="false">
+        <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/menu">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/scss/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
               <folding>
-                <element signature="e#59#102#0#PHP" expanded="true" />
+                <element signature="e#34#84#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/services.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+            <state relative-caret-position="495">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sonata_admin.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/packages/sonata_admin.yaml">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/MenuAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page.orm.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Page.orm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Repository/PageRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="75">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -119,11 +160,48 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>page</find>
+      <find>sonata.media.admin.media</find>
+      <find>sonata_media</find>
+      <find>App\Application\Sonata</find>
+      <find>App\Application\Sonata\M</find>
+      <find>MediaBundle</find>
+      <find>sonata_block</find>
+      <find>PageBundle</find>
+      <find>Page</find>
+      <find>app.admin.translate</find>
+      <find>common</find>
+      <find>resources</find>
+      <find>FormatterBundle</find>
+      <find>base_edit.html.twig</find>
+      <find>Twig</find>
+      <find>PageBundle\Entity\Translate</find>
+      <find>Translate</find>
+      <find>translatemenu</find>
+      <find>translate</find>
+      <find>locale</find>
+      <find>pageName</find>
+      <find>templates</find>
       <find>menu</find>
-      <find>$content</find>
-      <find>$slug</find>
+      <find>media</find>
+      <find>page</find>
+      <find>findGalleries</find>
+      <find>_locale</find>
+      <find>composer</find>
+      <find>CRUD</find>
+      <find>inversedBy</find>
+      <find>starter-template.css</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/config/packages</dir>
+      <dir>$PROJECT_DIR$/src/Application/Common/PageBundle</dir>
+      <dir>$PROJECT_DIR$/vendor</dir>
+      <dir>$PROJECT_DIR$/config</dir>
+      <dir>$PROJECT_DIR$/src/Application/Common/PageBundle/Admin</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/vendor/sonata-project/admin-bundle</dir>
+      <dir>$PROJECT_DIR$/src/Migrations</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,15 +209,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Repository/ContentRepository.php" />
-        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/MenuAdmin.php" />
-        <option value="$PROJECT_DIR$/config/services.yaml" />
-        <option value="$PROJECT_DIR$/config/packages/sonata_admin.yaml" />
+        <option value="$PROJECT_DIR$/src/Twig/Extensions/AppExtension.php" />
+        <option value="$PROJECT_DIR$/config/packages/twig_extensions.yaml" />
+        <option value="$PROJECT_DIR$/templates/resources/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/Repository/TranslatePageRepository.php" />
+        <option value="$PROJECT_DIR$/config/packages/sonata.yaml" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Translate.orm.xml" />
         <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Page.orm.xml" />
-        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Content.orm.xml" />
-        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Content.php" />
-        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Page.php" />
-        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/ContentAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/TranslateAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Repository/TranslatePageRepository.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Repository/TranslateMenuRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/TranslateMenuRepository.php" />
+        <option value="$PROJECT_DIR$/templates/extensions/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/MenuAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/TranslatePage.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/TranslatePageAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Menu.php" />
+        <option value="$PROJECT_DIR$/src/Repository/PageRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/MenuRepository.php" />
+        <option value="$PROJECT_DIR$/config/packages/sonata_admin.yaml" />
+        <option value="$PROJECT_DIR$/src/Repository/TranslateMediaRepository.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/src/Repository/GalleryHasMediaRepository.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/TranslateMedia.php" />
+        <option value="$PROJECT_DIR$/templates/index/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/PageAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/TranslateMediaAdmin.php" />
+        <option value="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error404.html.twig" />
+        <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/TranslateMenuAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/Group.php" />
+        <option value="$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/Media.php" />
+        <option value="$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/GalleryHasMedia.php" />
+        <option value="$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/Gallery.php" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/TranslateMenu.php" />
+        <option value="$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Media.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMenu.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslatePage.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Menu.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMedia.orm.xml" />
+        <option value="$PROJECT_DIR$/public/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/Twig/AppExtension.php" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/public/assets/scss/style.scss" />
+        <option value="$PROJECT_DIR$/src/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -150,6 +270,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -164,16 +287,6 @@
       <path value="$PROJECT_DIR$/public/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/package.json" />
       <path value="$PROJECT_DIR$/public/bundles/sonatacore/vendor/select2/package.json" />
       <path value="$PROJECT_DIR$/public/bundles/sonatamedia/nivo-gallery/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/vendor/admin-lte/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/vendor/jquery.scrollTo/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/vendor/jqueryui/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/vendor/readmore-js/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/vendor/slimScroll/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle/src/Resources/public/vendor/bootstrap/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle/src/Resources/public/vendor/components-font-awesome/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle/src/Resources/public/vendor/eonasdan-bootstrap-datetimepicker/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle/src/Resources/public/vendor/select2/package.json" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/media-bundle/src/Resources/public/nivo-gallery/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -184,7 +297,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/flex" />
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/security" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
@@ -283,7 +395,6 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
-      <path value="$PROJECT_DIR$/vendor/symfony/class-loader" />
       <path value="$PROJECT_DIR$/vendor/psr/link" />
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
@@ -302,13 +413,54 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="y" value="30" />
-    <option name="width" value="1250" />
-    <option name="height" value="867" />
+    <option name="x" value="-1" />
+    <option name="y" value="82" />
+    <option name="width" value="1238" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -323,100 +475,6 @@
               <item name="cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="PageBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="doctrine" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -425,10 +483,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../oze-admin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Admin" />
+      <recent name="$PROJECT_DIR$/src/Entity" />
+      <recent name="$PROJECT_DIR$/src/Application/Common/MediaBundle" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/extensions" />
+      <recent name="$PROJECT_DIR$/src/Twig" />
+      <recent name="$PROJECT_DIR$/src/Twig/Extensions" />
+      <recent name="$PROJECT_DIR$/templates/sonata" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -452,38 +527,181 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526937798039</updated>
-      <workItem from="1526937799201" duration="5295000" />
+      <workItem from="1526937799201" duration="8418000" />
+      <workItem from="1527012401963" duration="13162000" />
+      <workItem from="1527049383951" duration="3362000" />
+      <workItem from="1527097482538" duration="25000" />
+      <workItem from="1527097516460" duration="12700000" />
+      <workItem from="1527186854504" duration="12654000" />
+      <workItem from="1527449235750" duration="6509000" />
+      <workItem from="1528622326310" duration="898000" />
+      <workItem from="1528824669890" duration="1000" />
+      <workItem from="1528828529703" duration="650000" />
+      <workItem from="1528831603278" duration="10000" />
+      <workItem from="1528831638865" duration="1580000" />
+      <workItem from="1528833413206" duration="1794000" />
+      <workItem from="1528835249574" duration="1840000" />
+      <workItem from="1528837135171" duration="1088000" />
+      <workItem from="1528867458237" duration="1328000" />
+      <workItem from="1528869271437" duration="711000" />
+      <workItem from="1528872570013" duration="724000" />
+      <workItem from="1528919317176" duration="1793000" />
+      <workItem from="1528921120413" duration="1796000" />
+      <workItem from="1528923006327" duration="1793000" />
+      <workItem from="1528924813960" duration="464000" />
+      <workItem from="1529039014607" duration="1784000" />
+      <workItem from="1529040811312" duration="1794000" />
+      <workItem from="1529043160084" duration="1894000" />
+      <workItem from="1529046973991" duration="752000" />
+      <workItem from="1529352827689" duration="1716000" />
+      <workItem from="1529354560436" duration="1799000" />
+      <workItem from="1529356501596" duration="1165000" />
+      <workItem from="1529526680465" duration="1783000" />
+      <workItem from="1529528478998" duration="1795000" />
+      <workItem from="1529530391110" duration="1516000" />
+      <workItem from="1529605658189" duration="1781000" />
+      <workItem from="1529607455460" duration="1797000" />
+      <workItem from="1529609318040" duration="1795000" />
+      <workItem from="1529611128843" duration="1795000" />
+      <workItem from="1529612969939" duration="1793000" />
+      <workItem from="1529615419963" duration="1468000" />
+      <workItem from="1529617548522" duration="157000" />
+      <workItem from="1529696478773" duration="1795000" />
+      <workItem from="1529698289501" duration="1794000" />
+      <workItem from="1529700095445" duration="1794000" />
+      <workItem from="1529701904618" duration="1794000" />
+      <workItem from="1529704040925" duration="1796000" />
+      <workItem from="1529705848487" duration="1795000" />
+      <workItem from="1529707997740" duration="1482000" />
+      <workItem from="1529741741284" duration="1792000" />
+      <workItem from="1529743794798" duration="1885000" />
+      <workItem from="1529746652375" duration="1794000" />
+      <workItem from="1529748581337" duration="1802000" />
+      <workItem from="1529750396776" duration="1794000" />
+      <workItem from="1529752221879" duration="1689000" />
+      <workItem from="1529754052639" duration="1810000" />
+      <workItem from="1529755904084" duration="1795000" />
+      <workItem from="1529757712711" duration="1794000" />
+      <workItem from="1529759527766" duration="1797000" />
+      <workItem from="1529761337529" duration="1793000" />
+      <workItem from="1529763148926" duration="985000" />
+      <workItem from="1529950571130" duration="697000" />
+      <workItem from="1529953024424" duration="1794000" />
+      <workItem from="1529954831713" duration="1796000" />
+      <workItem from="1529956672256" duration="1477000" />
+      <workItem from="1529959467186" duration="887000" />
+      <workItem from="1530038355570" duration="1792000" />
+      <workItem from="1530040163833" duration="2030000" />
+      <workItem from="1530042948170" duration="857000" />
+      <workItem from="1530078965171" duration="1135000" />
+      <workItem from="1530132999965" duration="1664000" />
+      <workItem from="1530134782884" duration="1578000" />
+      <workItem from="1530216258652" duration="1792000" />
+      <workItem from="1530219839192" duration="389000" />
+      <workItem from="1530474580114" duration="1663000" />
+      <workItem from="1530476432079" duration="599000" />
+      <workItem from="1530565954606" duration="1794000" />
+      <workItem from="1530567761987" duration="1795000" />
+      <workItem from="1530569569481" duration="261000" />
+      <workItem from="1530648463728" duration="1446000" />
+      <workItem from="1530650252441" duration="1808000" />
+      <workItem from="1530652073593" duration="1794000" />
+      <workItem from="1530653878177" duration="961000" />
+      <workItem from="1530687150398" duration="757000" />
+      <workItem from="1530734452753" duration="1794000" />
+      <workItem from="1530736322600" duration="1794000" />
+      <workItem from="1530738127925" duration="1797000" />
+      <workItem from="1530739936009" duration="1800000" />
+      <workItem from="1530741748899" duration="1794000" />
+      <workItem from="1530743555243" duration="1524000" />
+      <workItem from="1530745389668" duration="1037000" />
+      <workItem from="1530819322037" duration="1702000" />
+      <workItem from="1530821124892" duration="1795000" />
+      <workItem from="1530822931093" duration="1795000" />
+      <workItem from="1530824741302" duration="1799000" />
+      <workItem from="1530826551918" duration="1725000" />
+      <workItem from="1530828758820" duration="1795000" />
+      <workItem from="1530830563058" duration="1815000" />
+      <workItem from="1530900539193" duration="1791000" />
+      <workItem from="1530902550244" duration="1795000" />
+      <workItem from="1530904433267" duration="1522000" />
+      <workItem from="1530906278707" duration="599000" />
+      <workItem from="1530908183310" duration="1793000" />
+      <workItem from="1530910903610" duration="919000" />
+      <workItem from="1533676786263" duration="8000" />
+      <workItem from="1534791641011" duration="670000" />
+      <workItem from="1535485277366" duration="22000" />
+      <workItem from="1536613143578" duration="1616000" />
+      <workItem from="1536615196712" duration="1888000" />
+      <workItem from="1536617439000" duration="900000" />
+      <workItem from="1536866377661" duration="522000" />
+      <workItem from="1556727861365" duration="2000" />
+      <workItem from="1556727950628" duration="880000" />
+      <workItem from="1556731440677" duration="1795000" />
+      <workItem from="1556733247575" duration="1793000" />
+      <workItem from="1556735272670" duration="1794000" />
+      <workItem from="1556737126908" duration="401000" />
+      <workItem from="1556743850324" duration="1775000" />
+      <workItem from="1556745640608" duration="1795000" />
+      <workItem from="1556747554978" duration="564000" />
+      <workItem from="1556748320063" duration="1793000" />
+      <workItem from="1556751832133" duration="403000" />
+      <workItem from="1556781642939" duration="135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5295000" />
+    <option name="totallyTimeSpent" value="214771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="937" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info id="npm" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3293556" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info id="npm" order="2" sideWeight="0.1765625" side_tool="true" weight="0.36934075" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29832935" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8234375" visible="true" weight="0.30659252" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="Database" order="4" weight="0.32803813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.3293556" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293556" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.3293556" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" sideWeight="0.1765625" side_tool="true" weight="0.36934075" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8234375" visible="true" weight="0.30659252" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293556" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20883055" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Database" order="4" weight="0.32883242" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -491,101 +709,363 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/Repository/ServiceEntityRepository.php</url>
+          <line>4</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Repository/ContentRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/TranslatePageAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="60">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+    <entry file="file://$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error404.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Menu.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" selection-start-line="20" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="100" selection-start-line="100" selection-end-line="121" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/MenuAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/sonata_admin.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Repository/PageRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Page.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="120">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="2174">
+          <caret line="186" selection-start-line="186" selection-end-line="207" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Content.orm.xml">
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/TranslateMedia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="1567">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Content.php">
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/TranslatePage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="142" column="33" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="33" />
+        <state relative-caret-position="1350">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/ContentAdmin.php">
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Admin/MenuAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes/dev/twig.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/bundles/sonataadmin/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes/sonata_admin.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/translate__page">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/translate__menu">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/translate__media">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/page__gallery">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/media__media">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/media__gallery_media">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/media__gallery">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/fos_user_user_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/fos_user_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/fos_user_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/GalleryHasMediaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/GalleryHasMedia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/Media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/TranslatePageRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Entity/TranslateMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sonata/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Resources/config/doctrine/Media.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="129" selection-start-line="19" selection-start-column="129" selection-end-line="19" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/Gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMenu.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/Menu.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslatePage.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="120" selection-start-line="9" selection-start-column="120" selection-end-line="9" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application/Common/PageBundle/Resources/config/doctrine/TranslateMedia.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json" />
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/menu">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Twig/AppExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding>
-            <element signature="e#59#102#0#PHP" expanded="true" />
+            <element signature="e#34#84#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://607659b5-69b1-40fa-891d-3afa11476262/schema/2gtclassic/table/page">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>

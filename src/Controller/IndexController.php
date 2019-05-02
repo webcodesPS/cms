@@ -46,6 +46,10 @@ class IndexController extends Controller
             ->getRepository(GalleryHasMedia::class)
             ->findGalleries($this->_getGalleriesId($pageArray), $request->getLocale());
 
+        if(empty($pageArray)) {
+            throw $this->createNotFoundException();
+        }
+
         return $this->render('index/list.html.twig', [
             'page' => $pageArray,
             'gallery' => $galleryArray

@@ -25,3 +25,8 @@ yarn-error.log
 ###> phpunit/phpunit ###
 /phpunit.xml
 ###< phpunit/phpunit ###
+
+composer.lock
+package-lock.json
+symfony.lock
+yarn.lock

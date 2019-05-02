@@ -14,7 +14,7 @@
 
         <field name="name" type="string" column="name" length="128" nullable="false"/>
 
-        <many-to-one field="page" target-entity="App\Application\Common\PageBundle\Entity\Page">
+        <many-to-one field="page" target-entity="App\Application\Common\PageBundle\Entity\Page" inversed-by="menus">
             <join-column name="page_id" referenced-column-name="id" nullable="true" />
         </many-to-one>
 
